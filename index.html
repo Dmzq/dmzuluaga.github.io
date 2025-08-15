@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Didier Zuluaga · Portafolio</title>
+  <meta name="description" content="Desarrollo web simple, mantenimiento de sitios y soporte IT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <div class="avatar">DM</div>
+      <div>
+        <h1>Didier Mauricio Zuluaga</h1>
+        <p class="muted">Programación & Tecnología · Colombia</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a class="btn" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img class="hero-bg" src="assets/img/hero.jpg" alt="Fondo" />
+    <div class="wrap hero-inner">
+      <h2>Desarrollo web y soluciones tecnológicas para negocios reales.</h2>
+      <p class="lead">Creo landing pages efectivas, hago <strong>ajustes en HTML/CSS/JS</strong>, doy <strong>mantenimiento a sitios</strong> (WordPress/Wix) y apoyo con <strong>tareas técnicas</strong> como pruebas de usuario y conversión de archivos.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contacto">Pedir cotización</a>
+        <a class="btn ghost" href="#proyectos">Ver trabajos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="wrap section">
+    <h3>Servicios</h3>
+    <div class="grid">
+      <article class="card">
+        <h4>Programación Web</h4>
+        <p>Landing pages, componentes y formularios en HTML, CSS y JavaScript.</p>
+      </article>
+      <article class="card">
+        <h4>Mantenimiento de Sitios</h4>
+        <p>Backups, actualizaciones, mejora de rendimiento y corrección de errores.</p>
+      </article>
+      <article class="card">
+        <h4>Soporte IT</h4>
+        <p>Instalación/configuración básica, documentación y soporte técnico remoto.</p>
+      </article>
+      <article class="card">
+        <h4>Optimización de Perfil de Google</h4>
+        <p>Creo/optimizo tu presencia en Google para que te encuentren en Maps y Búsqueda.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="proyectos" class="wrap section">
+    <h3>Proyectos (Demo)</h3>
+    <div class="grid projects">
+      <article class="project">
+        <img src="assets/img/project1.jpg" alt="Proyecto 1">
+        <div class="p-body">
+          <span class="pill">HTML · CSS</span>
+          <h4>Landing para negocio local</h4>
+          <p>Página informativa con servicios, mapa y botón a WhatsApp.</p>
+        </div>
+      </article>
+      <article class="project">
+        <img src="assets/img/project2.jpg" alt="Proyecto 2">
+        <div class="p-body">
+          <span class="pill">WordPress</span>
+          <h4>Sitio institucional básico</h4>
+          <p>Instalación de tema, menús y páginas esenciales (Inicio, Nosotros, Contacto).</p>
+        </div>
+      </article>
+      <article class="project">
+        <img src="assets/img/project3.jpg" alt="Proyecto 3">
+        <div class="p-body">
+          <span class="pill">JavaScript</span>
+          <h4>Formulario con validación</h4>
+          <p>Validación de campos y envío por correo con manejo de errores.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto" class="wrap section contact">
+    <h3>Contacto</h3>
+    <div class="contact-grid">
+      <div>
+        <p>¿Tienes un proyecto? Escríbeme — respondo pronto.</p>
+        <ul class="list">
+          <li><strong>Email:</strong> <a href="mailto:dmzuluaga.pro@gmail.com">dmzuluaga.pro@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> <a target="_blank" href="https://wa.me/573128454989">+57 312 845 4989</a></li>
+          <li><strong>GitHub:</strong> <a target="_blank" href="https://github.com/Dmzq">github.com/Dmzq</a></li>
+          <li><strong>Fiverr:</strong> <span class="muted">pronto</span></li>
+        </ul>
+      </div>
+      <form class="card form" onsubmit="event.preventDefault(); contactToast();">
+        <label>Nombre <input required type="text" placeholder="Tu nombre"></label>
+        <label>Email <input required type="email" placeholder="tunombre@email.com"></label>
+        <label>Mensaje <textarea required placeholder="Cuéntame brevemente tu proyecto"></textarea></label>
+        <button class="btn primary" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> Didier Mauricio Zuluaga — Hecho con HTML + CSS</p>
+  </footer>
+
+  <div id="toast" class="toast">Gracias, me pondré en contacto contigo.</div>
+</body>
+</html>
